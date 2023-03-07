@@ -1,0 +1,127 @@
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title> Book Store </title>
+      <link href="css/bootstrap.css" rel="stylesheet" />
+      <link href="css/bootstrap-grid.css" rel="stylesheet" />
+      <link href="css/bootstrap-reboot.css" rel="stylesheet" />
+      <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-lg bg-orange">
+      <a class="navbar-brand" href="#"><img src="css/images/logo.png" height="50"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="items.html">Products</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="buy.html">Checkout</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="login.html">LogIn</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="register.html">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="col-md intro" style="text-align:center;">
+        <div class="jumbotron jumbotron-fluid" style="padding-top:0;">
+          <div class="container">
+            <h1 class="company-name">Book<span> Store</span></h1>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias optio ipsam delectus ut velit voluptatum dicta, ipsa et sequi doloribus magnam rerum nesciunt nobis fugit consequuntur debitis obcaecati praesentium reprehenderit!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="buy-form col-md">
+        <form autocomplete="off" action="home.html">
+          <h1>Shopping Cart - Checkout</h1>
+          <label class="title" for="products">Book Name</label>
+            <div class="input-group mb-2 mr-sm-2">
+                <input id="products" type="text" name="productName" placeholder="Product">
+            </div>
+
+            <label class="title" for="payment">Payment Options</label>
+            <div class="input-group mb-2 mr-sm-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="v" id="bankTransfer">
+                  <label class="form-check-label" for="bankTransfer">
+                    Bank Transfer
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="v" id="visa">
+                  <label class="form-check-label" for="visa">
+                    Visa / Master Card
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="v" id="paypal" checked>
+                  <label class="form-check-label" for="paypal">
+                    PayPal
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="v" id="cashOnDelivery">
+                  <label class="form-check-label" for="cashOnDelivery">
+                    Cash on Delivery
+                  </label>
+                </div>
+            </div>
+
+            <label class="title" for="quantity">Quantity</label>
+            <div class="input-group mb-2 mr-sm-2">
+                <input type="number" class="form-control" id="quantity" placeholder="1">
+            </div>
+
+            <label class="title" for="note">Note</label>
+            <div class="input-group mb-2 mr-sm-2">
+                <textarea class="form-control" id="note" placeholder="Write Something..." cols="7" rows="4"></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-success mb-2" onclick="confirmOrder()">Submit</button>
+            <button type="clear" class="btn btn-danger mb-2">Clear</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="table-responsive">
+        <table class="table col-sm-12 col-md-6">
+          <tr>
+            <td class="email-us"><h5><a type="email" href="mailto:test@example.com">E-mail Us: Test@Example.com</a></h5></td>
+            <td class="contact-us"><h5>Contact Us : +966123456780</h5></td>
+          </tr>
+        </table>
+      </div>
+    </footer>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
